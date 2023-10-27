@@ -1,31 +1,46 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Battleship Game
 
-Welcome Morgan Klockars,
+Welcome to the Battleship Game project! This is a simple implementation of the classic game Battleship in Python, where you can play against an AI enemy. The game is designed to be a learning project for those looking to practice their Python programming skills.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+## Game Overview
 
-## Reminders
+In Battleship, you will have a game board with hidden boats. Your objective is to guess the locations of the enemy's boats and sink them before the enemy sinks yours. Each boat occupies a certain number of spaces on the board.
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+## Features
 
-## Creating the Heroku app
+- Random placement of boats for both the player and the AI enemy.
+- A user-friendly interface in the console.
+- The ability to see your previous guesses and hits/misses.
+- A simple AI enemy that makes random guesses.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Setup
 
-1. `heroku/python`
-2. `heroku/nodejs`
+1. Make sure you have Python 3 installed on your computer. You can download it from the [Python website](https://www.python.org/downloads/).
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+2. Clone this repository to your local machine or download the ZIP file and extract it.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+3. Open a terminal or command prompt and navigate to the project's directory.
 
-Connect your GitHub repository and deploy as normal.
+4. Run the game by executing the following command: (python3 run.py) in the console 
+   
+5. Follow the on-screen instructions to play the game.
 
-## Constraints
+## How to Play
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+1. You will be prompted to enter your guess in the format of "A5" (row first, then column).
 
------
-Happy coding!
+2. The game will inform you if your guess was a hit or a miss, and if you have sunk any enemy boats.
+
+3. Continue taking turns with the AI enemy until either you or the enemy sinks all the boats.
+
+4. The game will end, and the winner (you or the AI enemy) will be announced.
+
+## Project Structure
+
+- `run.py`: The main Python script that contains the game logic.
+- `README.md`: This file, providing project information and instructions.
+
+
+## Contribution
+
+Contributions to this project are welcome! If you have ideas for improvements, new features, or bug fixes, please open an issue or create a pull request.
